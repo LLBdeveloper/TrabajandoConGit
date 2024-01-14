@@ -7,6 +7,8 @@ import Propiedades from './components/Propiedades'
 import ComponenteCP from './components/ComponenteCP'
 import Estado from './components/Estado'
 import EstadoCondicional from './components/EstadoCondicional'
+import ContadorHooks from './components/ContadorHooks'
+import ScrollHooks from './components/ScrollHooks'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -33,7 +35,8 @@ function App() {
       />
       <Estado />
       <EstadoCondicional />
-      
+      <ContadorHooks />
+      <ScrollHooks />
       <br/>
       <h1>Vite + React</h1>
       <div className="card">
