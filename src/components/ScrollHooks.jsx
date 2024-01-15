@@ -5,11 +5,29 @@ function ScrollHooks () {
     const [scrollY, setScrollY]= useState(0)
 
     useEffect(()=>{
-        console.log("fase de actualizacion")
+        console.log("moviendo el scroll")
         const detectarScroll=()=> setScrollY(window.pageYOffset);
         window.addEventListener("scroll",detectarScroll);
-        }
-    )
+    },[scrollY]);
+
+    useEffect(()=>{
+        console.log("fase de montaje");
+    },[]);//solo una vez con []
+
+    useEffect(()=>{
+        console.log("fase de actualizacion");
+    });// mejor usar el primero 
+
+    useEffect(()=>{
+        const detectarScroll=()=> setScrollY(window.pageYOffset);
+        window.addEventListener("scroll",detectarScroll);
+
+        return()=>{ 
+        console.log("fase de desmontaje"); 
+        window.removeEventListener("scroll",detectarScroll);
+
+    }
+    },[scrollY]);//desuscribirte de servicios, desconectar de API,  limpiar intervalo de tiempo o manejadores de componentes que dejaron de existir para no consumir memoria de mas
 
     return(
         <>

@@ -9,6 +9,7 @@ import Estado from './components/Estado'
 import EstadoCondicional from './components/EstadoCondicional'
 import ContadorHooks from './components/ContadorHooks'
 import ScrollHooks from './components/ScrollHooks'
+import RelojHooks from './components/RelojHooks'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -37,6 +38,7 @@ function App() {
       <EstadoCondicional />
       <ContadorHooks />
       <ScrollHooks />
+      <RelojHooks />
       <br/>
       <h1>Vite + React</h1>
       <div className="card">
