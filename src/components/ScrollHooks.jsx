@@ -16,7 +16,7 @@ function ScrollHooks () {
 
     useEffect(()=>{
         console.log("fase de actualizacion");
-    });// mejor usar el primero 
+    });// mejor usar el primero, es medio como mala practica usar este salvo casos especiales
 
     useEffect(()=>{
         const detectarScroll=()=> setScrollY(window.pageYOffset);
