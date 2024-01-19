@@ -2,7 +2,7 @@
 
 // import React from 'react'
 import useSound from 'use-sound';
-import monacobb from '/src/components/BipSound.mp3';
+import monacobb from '/src/components/monacobb.mp3';
 
 
 
@@ -16,7 +16,7 @@ const iniciar = () => {
 }
 
     return (
-        <div>
+        <div> 
             <button onClick={iniciar}> sonar </button>
         </div>
     )
