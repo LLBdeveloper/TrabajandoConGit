@@ -11,6 +11,8 @@ import ContadorHooks from './components/ContadorHooks'
 import ScrollHooks from './components/ScrollHooks'
 import RelojHooks from './components/RelojHooks'
 import AjaxHooks from './components/AjaxHooks'
+import Intentando from './components/Intentando'
+import Bip from './components/Bip'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -41,6 +43,11 @@ function App() {
       <ScrollHooks />
       <RelojHooks />
       <AjaxHooks />
+      <Bip />
+
+    
+    <Intentando />
+
       <br/>
       <h1>Vite + React</h1>
       <div className="card">
