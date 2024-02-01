@@ -1,5 +1,8 @@
 import './App.css'
-import ItemListContainer from './components/ItemListContainer'
+import BuscadorAPIAutomatico from './components/BuscadorAPIAutomatico'
+// import BuscadorAPIboton from './components/BuscadorAPIboton'
+// import Mercadolibre from './components/Mercadolibre'
+// import ItemListContainer from './components/ItemListContainer'
 // import Promesas from './components/Promesas'
 // import Componente from "./components/Componente"
 // import Propiedades from './components/Propiedades'
@@ -36,10 +39,13 @@ function App() {
       <RelojHooks />
       <AjaxHooks />
       
-      <Bip />
-      <Intentando /> 
-      <Promesas />*/}
+      <BuscadorAPIboton/>
+      <Mercadolibre/>
       <ItemListContainer greeting={"todos nuestros productos"}/>
+      <Intentando /> 
+    <Promesas />*/}
+  <BuscadorAPIAutomatico/>
+
 
     </>
   )
