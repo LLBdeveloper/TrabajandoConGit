@@ -2,18 +2,18 @@
 
 // import React from 'react'
 import useSound from 'use-sound';
-import monacobb from '/src/components/monacobb.mp3';
+import monacobb from '/src/components/happy.mp3';
 
 
 
 
 function Bip() {
 
-const [playSound] = useSound(monacobb)
-const iniciar = () => {
-    setTimeout(playSound, 4000)
-    setTimeout(playSound, 8000)
-}
+    const [playSound] = useSound(monacobb)
+    const iniciar = () => {
+        setTimeout(playSound, 4000)
+        setTimeout(playSound, 8000)
+    }
 
     return (
         <div> 
@@ -23,4 +23,3 @@ const iniciar = () => {
 }
 
 export default Bip
-

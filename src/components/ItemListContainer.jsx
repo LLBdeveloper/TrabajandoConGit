@@ -14,7 +14,7 @@ const ItemListContainer = ({greeting}) => {
             })
     },[])
     
-    return (
+    return ( 
         <>
             <h1>{greeting}</h1>
             <ItemList products={products}/>

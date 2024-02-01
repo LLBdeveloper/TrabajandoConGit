@@ -2,9 +2,9 @@
 
 const Item = ({name, img, price}) => {
     return (
-        <div > 
+        <div style={{ margin: "1rem", border: "1rem solid black"}}> 
             <h3>{name}</h3>
-            <img src={img} alt={name}/>
+            <img src={img} alt={name} style={{ maxHeight: "300px" }} />
             <p>precio: ${price}</p>
         </div>
         
